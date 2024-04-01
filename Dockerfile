@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY /app /app
 
-EXPOSE 5000
+# Suck it "PayCash Online Protocol", this perfect-numbered port is mine.
+EXPOSE 8128
 
-# Run app.py when the container launches
 CMD ["flask", "run", "--host=0.0.0.0"]
